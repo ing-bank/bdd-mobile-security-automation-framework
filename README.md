@@ -4,12 +4,17 @@ ING provides a set of BDD security tests with Calabash,Cucumber and Ruby, follow
 
 The tests use the power of [calabash.io](https://calabash.io) to automate the UI, [Cucumber](https://cucumber.io/) and Gherkin for its simple language and the Android tools to check for security issues.
 
-### Prerequisites
+### Prerequisites for Android
 
 * Docker
 * Genymotion or real devices 
 
-### Docker container 
+### Prerequisites for iOS
+
+* macOS
+* XCode CLI tools 
+
+## Docker container for Android testing
 
 The docker container can be used to spin up Calabash and the Android tools. Follow the README in the docker folder.
 
@@ -22,7 +27,7 @@ The repo contains a simple test that can be used as a sample to check that every
 
 
 ## OWASP MASVS and MSTG
-The repo's structure is based on the [OWASP Mobile Application Security Verification Standard](https://github.com/OWASP/owasp-masvs) and the corresponding tests from the [OWASP Mobile Security Testing Guide](https://github.com/OWASP/owasp-mstg). For each test many features are defined with corresponding steps. 
+The repo's structure is based on the [OWASP Mobile Application Security Verification Standard](https://github.com/OWASP/owasp-masvs) and the corresponding tests from the [OWASP Mobile Security Testing Guide](https://github.com/OWASP/owasp-mstg). For each test many features are defined with the corresponding steps. 
 
 
 ## How to contribute
@@ -39,25 +44,15 @@ In order to contribute in creating new tests, the best way is to identify first 
 Follow the Wiki to check how to create pull requests. 
 
 
+## Tested on
 
-### Work in progress
+The following BDD tests have been tested using the following OWASP vulnerable apps as test cases:
 
-**iOS (only native on macOS)**:
-
-* V2 - Data Storage and Privacy
-	* Testing For Sensitive Data in Logs 	* Testing for Sensitive Data in the Clipboard 
-	* Testing for Sensitive Data in the Keyboard Cache (To Be Completed)
-	* Testing for Sensitive Data in Backups (To Be Completed)
+*	Android: [MSTG Hacking Playground](https://github.com/OWASP/MSTG-Hacking-Playground)
+* 	iOS: [iGoat](https://github.com/OWASP/igoat) 
 
 
-**Android**:
 
-* V2 - Data Storage and Privacy
-    * Testing For Sensitive Data in Logs 
-    * Testing for Sensitive Data in the Clipboard 
-    * Testing for Sensitive Data in the Keyboard Cache 
-    * Testing for Sensitive Data in Backups (To Be Completed)
 
-* V6 - Platform Interaction 
-	* Testing for XSS in WebView (Done)
+
 
