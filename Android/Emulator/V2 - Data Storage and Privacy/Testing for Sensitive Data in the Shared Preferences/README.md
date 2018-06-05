@@ -10,7 +10,7 @@ The following feature
 
 	Then I should not see "THISISASENSITIVEINFORMATION" in the shared preferences
 	
-checks for sensitive data in the file sstored in shared preferences
+checks for sensitive data in the file stored in shared preferences
 
 
 ###Command
