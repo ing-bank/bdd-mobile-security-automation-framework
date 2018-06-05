@@ -25,6 +25,21 @@ The repo contains a simple test that can be used as a sample to check that every
 The repo's structure is based on the [OWASP Mobile Application Security Verification Standard](https://github.com/OWASP/owasp-masvs) and the corresponding tests from the [OWASP Mobile Security Testing Guide](https://github.com/OWASP/owasp-mstg). For each test many features are defined with corresponding steps. 
 
 
+## How to contribute
+
+In order to contribute in creating new tests, the best way is to identify first which command will be usefull to automate specific controls. Follow the following steps:
+
+-	Go to the "Issues" tab and select a test that you would like to write
+-	Create a folder in the repo with the following structure OS/Emulator or Device/MASVS chapter/ MSTG Test/
+	-	so in example Android/Emulator/V2 - Data Storage and Privacy/Testing for Sensitive Information in log files/
+-	Create a README.md with the description of the commands to use and how to use it 
+- 	Create a .feature file
+-  Create a steps.rb file 
+
+Follow the Wiki to check how to create pull requests. 
+
+
+
 ### Work in progress
 
 **iOS (only native on macOS)**:
