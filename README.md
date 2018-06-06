@@ -12,7 +12,7 @@ The tests use the power of [calabash.io](https://calabash.io) to automate the UI
 ### Prerequisites for iOS
 
 * macOS
-* XCode CLI tools 
+* Xcode CLI tools 
 
 ## Docker container for Android testing
 
