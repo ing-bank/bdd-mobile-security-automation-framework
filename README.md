@@ -1,4 +1,4 @@
-# BDD security tests for Android and iOS application
+# Automating OWASP MSTG through BDD mobile security testings
 
 ING provides a set of BDD security tests with Calabash,Cucumber and Ruby, following the OWASP Mobile Security Testing Guide and the OWASP Mobile Top 10 2016, that can be easily customized and implemented through the entire CI/CD pipeline. 
 
@@ -27,7 +27,7 @@ The repo contains a simple test that can be used as a sample to check that every
 
 
 ## OWASP MASVS and MSTG
-The repo's structure is based on the [OWASP Mobile Application Security Verification Standard](https://github.com/OWASP/owasp-masvs) and the corresponding tests from the [OWASP Mobile Security Testing Guide](https://github.com/OWASP/owasp-mstg). For each test many features are defined with the corresponding steps. 
+The repo's structure is based on the [OWASP Mobile Application Security Verification Standard](https://github.com/OWASP/owasp-masvs) and the corresponding tests from the [OWASP Mobile Security Testing Guide](https://github.com/OWASP/owasp-mstg). For each test many features are defined with the corresponding steps.
 
 
 ## How to contribute
