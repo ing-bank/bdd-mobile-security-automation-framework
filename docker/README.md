@@ -61,7 +61,7 @@ It will create a Cucumber skeleton in the current folder like this:
 
 After setting up the container the keystore related issues may raise. The following steps will help to fix the issue
 
--	Navigate to  `~/.android/ directory` .
+-	Navigate to  `~/.android/` directory .
 -  Remove the existing `debug.keystore` file in case one exist
 -	Apply the following command 
 
@@ -72,7 +72,10 @@ $keytool -genkey -v -keystore debug.keystore -alias androiddebugkey -storepass a
 
 ```
 $ calabash-android setup
+
 ```
+Insert the complete path `~/.android/debug.keystore`
+
 -	The resign the new debug.keystore file using the command
 
 ``` 
