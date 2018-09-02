@@ -35,7 +35,7 @@ RUN apt-get -y install lib32stdc++6 lib32z1 lib32z1-dev
 #RUN apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 zlib1g:i386
 #install calabash-android
 
-RUN gem install calabash-android
+RUN gem install calabash-android --version 0.9.0
 
 ENV ANDROID_HOME /usr/local/android-sdk
 ENV GRADLE_HOME /usr/local/gradle
