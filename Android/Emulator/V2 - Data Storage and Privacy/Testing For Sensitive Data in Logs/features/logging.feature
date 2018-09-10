@@ -1,4 +1,4 @@
-Feature: Press button test
+Feature: Check that no sensitive info are written in the log files
 
   Scenario: Open the app and press OMTG_DATAST_002_Logging
     Given I clean "all" the application log
