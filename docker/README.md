@@ -5,7 +5,7 @@ This document provides a steb by step guide on how to build the docker container
 
 ## On the host machine
 
-1. Install [Genymotion "personal use"](https://www.genymotion.com/fun-zone/) and run an instance of Android
+1. Install [Genymotion "personal use"](https://www.genymotion.com/fun-zone/) and run an instance of Android API 22
 2. Create a folder with the .apk 
 3. Build the image using the Dockerfile (see below)
 4. Run the image and mount the folder with APK and tests (see below)
