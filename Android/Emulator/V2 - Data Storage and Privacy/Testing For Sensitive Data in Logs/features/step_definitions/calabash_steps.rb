@@ -27,13 +27,12 @@ Then(/^I should not see text with "([^"]*)" in my "([^"]*)" log$/) do |text, typ
     loglevel = "S"
   end
 
-  counter = %x(adb logcat -d --regex=\"#{text}\" *:#{loglevel}| grep #{loglevel}/ | wc -l)
+  counter = %x(adb logcat -d | grep #{text} | wc -l)
   
-  clean_counter = counter.delete!("\n").delete!(" ").to_i 
+  clean_counter = counter.to_i 
+  
 
   if clean_counter > 0
     fail(msg="MSTG V2.1: Sensitive information #{text} found  #{clean_counter} times in log file")
   end
 end
-
-
