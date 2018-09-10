@@ -27,7 +27,7 @@ Then(/^I should not see text with "([^"]*)" in my "([^"]*)" log$/) do |text, typ
     loglevel = "S"
   end
 
-  counter = %x(adb logcat -d | grep #{text} | wc -l)
+  counter = %x(adb logcat -d *:#{loglevel} | grep #{text} | wc -l)
   
   clean_counter = counter.to_i 
   
